@@ -18,35 +18,36 @@
 
 // import
 import Dashboard from "views/Dashboard/Dashboard.js";
-import Tables from "views/Dashboard/Tables.js";
+import Tables from "views/Dashboard/Sessoes.js";
 // import Billing from "views/Dashboard/Billing.js";
 import Profile from "views/Dashboard/Profile.js";
 import SignIn from "views/Pages/SignIn.js";
 import SignUp from "views/Pages/SignUp.js";
+import { ViewIcon,AddIcon } from '@chakra-ui/icons'
+
+
 
 import {
   HomeIcon,
   StatsIcon,
-  CreditIcon,
+  
   PersonIcon,
   DocumentIcon,
   RocketIcon,
-  SupportIcon,
+  
 } from "components/Icons/Icons";
 
 var dashRoutes = [
   {
     path: "/dashboard",
-    name: "Sessão",
-    rtlName: "لوحة القيادة",
-    icon: <HomeIcon color='inherit' />,
+    name: "Linha",
+    icon: <ViewIcon color='inherit' />,
     component: Dashboard,
     layout: "/admin",
   },
   {
     path: "/tables",
-    name: "Tables",
-    rtlName: "لوحة القيادة",
+    name: "Sessão",
     icon: <StatsIcon color='inherit' />,
     component: Tables,
     layout: "/admin",
@@ -63,13 +64,11 @@ var dashRoutes = [
   {
     name: "Area de gerenciamento",
     category: "account",
-    rtlName: "صفحات",
     state: "pageCollapse",
     views: [
       {
         path: "/profile",
         name: "Usuarios",
-        rtlName: "لوحة القيادة",
         icon: <PersonIcon color='inherit' />,
         secondaryNavbar: true,
         component: Profile,
@@ -85,7 +84,7 @@ var dashRoutes = [
       {
         path: "/signup",
         name: "Criar Usuario",       
-        icon: <RocketIcon color='inherit' />,
+        icon: <AddIcon color='inherit' />,
         secondaryNavbar: true,
         component: SignUp,
         layout: "/auth",

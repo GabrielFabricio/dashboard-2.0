@@ -35,7 +35,8 @@ import {
 } from "@chakra-ui/react";
 
 // Icons
-import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
+import signInImage from "assets/img/seg-login.png";
+
 // Custom Components
 import AuthFooter from "components/Footer/AuthFooter";
 import GradientBorder from "components/GradientBorder/GradientBorder";
@@ -75,20 +76,19 @@ function SignUp() {
             mt={{ base: "60px", md: "140px", lg: "200px" }}
             mb='50px'>
             <Text
-              fontSize='4xl'
+              fontSize='50px'
               lineHeight='39px'
               color='white'
               fontWeight='bold'>
-              Welcome!
+             Seja Bem Vindo ao Hands On
             </Text>
             <Text
-              fontSize='md'
-              color='white'
+              fontSize='20px'
+              color='black.400'
               fontWeight='normal'
               mt='10px'
               w={{ base: "100%", md: "90%", lg: "90%", xl: "80%" }}>
-              Use these awesome forms to login or create new account in your
-              project for free.
+              introdusa seu EDV e cire uma Senha para começar
             </Text>
           </Flex>
           <GradientBorder p='2px' me={{ base: "none", lg: "30px", xl: "none" }}>
@@ -103,97 +103,13 @@ function SignUp() {
               bg={{
                 base: "rgb(19,21,56)",
               }}>
-              <Text
-                fontSize='xl'
-                color={textColor}
-                fontWeight='bold'
-                textAlign='center'
-                mb='22px'>
-                Register With
-              </Text>
-              <HStack spacing='15px' justify='center' mb='22px'>
-                <GradientBorder borderRadius='15px'>
-                  <Flex
-                    _hover={{ filter: "brightness(120%)" }}
-                    transition='all .25s ease'
-                    cursor='pointer'
-                    justify='center'
-                    align='center'
-                    bg='rgb(19,21,54)'
-                    w='71px'
-                    h='71px'
-                    borderRadius='15px'>
-                    <Link href='#'>
-                      <Icon
-                        color={titleColor}
-                        as={FaFacebook}
-                        w='30px'
-                        h='30px'
-                        _hover={{ filter: "brightness(120%)" }}
-                      />
-                    </Link>
-                  </Flex>
-                </GradientBorder>
-                <GradientBorder borderRadius='15px'>
-                  <Flex
-                    _hover={{ filter: "brightness(120%)" }}
-                    transition='all .25s ease'
-                    cursor='pointer'
-                    justify='center'
-                    align='center'
-                    bg='rgb(19,21,54)'
-                    w='71px'
-                    h='71px'
-                    borderRadius='15px'>
-                    <Link href='#'>
-                      <Icon
-                        color={titleColor}
-                        as={FaApple}
-                        w='30px'
-                        h='30px'
-                        _hover={{ filter: "brightness(120%)" }}
-                      />
-                    </Link>
-                  </Flex>
-                </GradientBorder>
-                <GradientBorder borderRadius='15px'>
-                  <Flex
-                    _hover={{ filter: "brightness(120%)" }}
-                    transition='all .25s ease'
-                    cursor='pointer'
-                    justify='center'
-                    align='center'
-                    bg='rgb(19,21,54)'
-                    w='71px'
-                    h='71px'
-                    borderRadius='15px'>
-                    <Link href='#'>
-                      <Icon
-                        color={titleColor}
-                        as={FaGoogle}
-                        w='30px'
-                        h='30px'
-                        _hover={{ filter: "brightness(120%)" }}
-                      />
-                    </Link>
-                  </Flex>
-                </GradientBorder>
-              </HStack>
-              <Text
-                fontSize='lg'
-                color='gray.400'
-                fontWeight='bold'
-                textAlign='center'
-                mb='22px'>
-                or
-              </Text>
               <FormControl>
                 <FormLabel
                   color={titleColor}
                   ms='4px'
                   fontSize='sm'
                   fontWeight='normal'>
-                  Name
+                  EDV
                 </FormLabel>
 
                 <GradientBorder
@@ -214,43 +130,17 @@ function SignUp() {
                     maxW='100%'
                     h='46px'
                     type='text'
-                    placeholder='Your name'
+                    placeholder='Seu EDV'
                   />
                 </GradientBorder>
+                
+                
                 <FormLabel
                   color={titleColor}
                   ms='4px'
                   fontSize='sm'
                   fontWeight='normal'>
-                  Email
-                </FormLabel>
-                <GradientBorder
-                  mb='24px'
-                  h='50px'
-                  w={{ base: "100%", lg: "fit-content" }}
-                  borderRadius='20px'>
-                  <Input
-                    color={titleColor}
-                    bg={{
-                      base: "rgb(19,21,54)",
-                    }}
-                    border='transparent'
-                    borderRadius='20px'
-                    fontSize='sm'
-                    size='lg'
-                    w={{ base: "100%", md: "346px" }}
-                    maxW='100%'
-                    h='46px'
-                    type='email'
-                    placeholder='Your email address'
-                  />
-                </GradientBorder>
-                <FormLabel
-                  color={titleColor}
-                  ms='4px'
-                  fontSize='sm'
-                  fontWeight='normal'>
-                  Password
+                  Senha
                 </FormLabel>
                 <GradientBorder
                   mb='24px'
@@ -270,52 +160,51 @@ function SignUp() {
                     maxW='100%'
                     h='46px'
                     type='password'
-                    placeholder='Your password'
+                    placeholder='Crie sua Senha'
                   />
                 </GradientBorder>
-                <FormControl display='flex' alignItems='center' mb='24px'>
-                  <DarkMode>
-                    <Switch id='remember-login' colorScheme='brand' me='10px' />
-                  </DarkMode>
 
-                  <FormLabel
+                <FormLabel
+                  color={titleColor}
+                  ms='4px'
+                  fontSize='sm'
+                  fontWeight='normal'>
+                  Repita sua Senha
+                </FormLabel>
+                <GradientBorder
+                  mb='24px'
+                  h='50px'
+                  w={{ base: "100%", lg: "fit-content" }}
+                  borderRadius='20px'>
+                  <Input
                     color={titleColor}
-                    htmlFor='remember-login'
-                    mb='0'
-                    fontWeight='normal'>
-                    Remember me
-                  </FormLabel>
-                </FormControl>
+                    bg={{
+                      base: "rgb(19,21,54)",
+                    }}
+                    border='transparent'
+                    borderRadius='20px'
+                    fontSize='sm'
+                    size='lg'
+                    w={{ base: "100%", md: "346px" }}
+                    maxW='100%'
+                    h='46px'
+                    type='password'
+                    placeholder='Repita a Senha'
+                  />
+                </GradientBorder>
+
                 <Button
                   variant='brand'
-                  fontSize='10px'
+                  fontSize='20px'
                   type='submit'
                   w='100%'
                   maxW='350px'
                   h='45'
                   mb='20px'
                   mt='20px'>
-                  SIGN UP
+                  Registrar
                 </Button>
               </FormControl>
-              <Flex
-                flexDirection='column'
-                justifyContent='center'
-                alignItems='center'
-                maxW='100%'
-                mt='0px'>
-                <Text color={textColor} fontWeight='medium'>
-                  Already have an account?
-                  <Link
-                    color={titleColor}
-                    as='span'
-                    ms='5px'
-                    href='#'
-                    fontWeight='bold'>
-                    Sign In
-                  </Link>
-                </Text>
-              </Flex>
             </Flex>
           </GradientBorder>
         </Flex>
@@ -335,7 +224,8 @@ function SignUp() {
           position='absolute'
           left='0px'>
           <Box
-            bgImage={signUpImage}
+            background= 'linear-gradient(94.56deg, #582CFF 79.99%, #fff 115.65%)'
+            bgImage={signInImage}
             w='100%'
             h='1300px'
             bgSize='cover'
@@ -348,11 +238,11 @@ function SignUp() {
             position='absolute'>
             <Text
               textAlign='center'
-              color='white'
+              color='#21242F'
               letterSpacing='8px'
               fontSize='20px'
               fontWeight='500'>
-              INSPIRED BY THE FUTURE:
+              Criado para Industria 4.0
             </Text>
             <Text
               textAlign='center'
@@ -361,8 +251,8 @@ function SignUp() {
               fontSize='36px'
               fontWeight='bold'
               bgClip='text !important'
-              bg='linear-gradient(94.56deg, #FFFFFF 79.99%, #21242F 102.65%)'>
-              THE VISION UI DASHBOARD
+              bg='linear-gradient(94.56deg, #21242F 79.99%, #fff 115.65%)'>
+              Hands On
             </Text>
           </Box>
         </Box>

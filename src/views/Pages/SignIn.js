@@ -23,7 +23,7 @@ import GradientBorder from "components/GradientBorder/GradientBorder";
 
 function SignIn() {
   const titleColor = "white";
-  const textColor = "gray.400";
+  const textColor = "black.400";
 
   return (
     <Flex position='relative'>
@@ -57,10 +57,22 @@ function SignIn() {
               mb='36px'
               ms='4px'
               color={textColor}
-              fontWeight='bold'
-              fontSize='14px'>
+              fontWeight='normal'
+              fontSize='30px'>
               introdusa seu EDV e sua Senha para começar
             </Text>
+            <GradientBorder p='2px' me={{ base: "none", lg: "30px", xl: "none" }}>
+            <Flex
+              background='transparent'
+              borderRadius='30px'
+              direction='column'
+              p='40px'
+              minW={{ base: "unset", md: "430px", xl: "450px" }}
+              w='100%'
+              mx={{ base: "0px" }}
+              bg={{
+                base: "rgb(19,21,56)",
+              }}>
             <FormControl>
               <FormLabel
                 ms='4px'
@@ -126,6 +138,8 @@ function SignIn() {
               mt='20px'>
               LOGIN
             </Button>
+         
+          
 
             <Flex
               flexDirection='column'
@@ -133,15 +147,20 @@ function SignIn() {
               alignItems='center'
               maxW='100%'
               mt='0px'>
-              <Text color={textColor} fontWeight='medium'>
-                Crie Sua Conta aqui
-                <Link color={titleColor} as='span' ms='5px' fontWeight='bold'>
-                  Sign Up
+              <Text color='#fff' fontWeight='medium'>
+                Crie uma conta aqui:
+                <Link color='purple.400' as='span' ms='5px' fontWeight='bold'>
+                  Registrar
                 </Link>
               </Text>
             </Flex>
           </Flex>
+        </GradientBorder>
+       
+          </Flex>
+          
         </Flex>
+    
         <Box
         
           w={{ base: "335px", md: "450px" }}
@@ -161,7 +180,7 @@ function SignIn() {
           position='absolute'
           left='0px'>
           <Box
-            background= 'rgb(245,245,245)'
+            background= 'linear-gradient(94.56deg, #582CFF 79.99%, #fff 115.65%)'
             bgImage={signInImage}
             w='100%'
             h='100%'

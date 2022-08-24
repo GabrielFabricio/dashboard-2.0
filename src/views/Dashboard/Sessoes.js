@@ -36,7 +36,6 @@ import CardHeader from "components/Card/CardHeader.js";
 import CardBody from "components/Card/CardBody.js";
 
 // Table Components
-import TablesProjectRow from "components/Tables/TablesProjectRow";
 import TablesTableRow from "components/Tables/TablesTableRow";
 
 // Data
@@ -52,7 +51,7 @@ function Tables() {
       <Card overflowX={{ sm: "scroll", xl: "hidden" }} pb='0px'>
         <CardHeader p='6px 0px 22px 0px'>
           <Text fontSize='lg' color='#fff' fontWeight='bold'>
-            Authors Table
+            Sessões
           </Text>
         </CardHeader>
         <CardBody>
@@ -64,13 +63,13 @@ function Tables() {
                   color='gray.400'
                   fontFamily='Plus Jakarta Display'
                   borderBottomColor='#56577A'>
-                  Author
+                  Linha
                 </Th>
                 <Th
                   color='gray.400'
                   fontFamily='Plus Jakarta Display'
                   borderBottomColor='#56577A'>
-                  Function
+                  Produtividade
                 </Th>
                 <Th
                   color='gray.400'
@@ -82,7 +81,7 @@ function Tables() {
                   color='gray.400'
                   fontFamily='Plus Jakarta Display'
                   borderBottomColor='#56577A'>
-                  Employed
+                  Usuario
                 </Th>
                 <Th borderBottomColor='#56577A'></Th>
               </Tr>
@@ -107,7 +106,7 @@ function Tables() {
         </CardBody>
       </Card>
       {/* Projects Table */}
-      <Card my='22px' overflowX={{ sm: "scroll", xl: "hidden" }} pb='0px'>
+      {/* <Card my='22px' overflowX={{ sm: "scroll", xl: "hidden" }} pb='0px'>
         <CardHeader p='6px 0px 22px 0px'>
           <Flex direction='column'>
             <Text fontSize='lg' color='#fff' fontWeight='bold' mb='.5rem'>
@@ -178,7 +177,7 @@ function Tables() {
             </Tbody>
           </Table>
         </CardBody>
-      </Card>
+      </Card> */}
     </Flex>
   );
 }

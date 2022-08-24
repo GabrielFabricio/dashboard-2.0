@@ -51,22 +51,16 @@ function TablesTableRow(props) {
         border={lastItem ? "none" : null}
         borderBottomColor='#56577A'>
         <Flex align='center' py='.8rem' minWidth='100%' flexWrap='nowrap'>
-          <Avatar
-            src={logo}
-            w='50px'
-            borderRadius='12px'
-            me='18px'
-            border='none'
-          />
+          
           <Flex direction='column'>
             <Text
-              fontSize='sm'
+              fontSize='20px'
               color='#fff'
               fontWeight='normal'
               minWidth='100%'>
               {name}
             </Text>
-            <Text fontSize='sm' color='gray.400' fontWeight='normal'>
+            <Text fontSize='25px' color='gray.400' fontWeight='normal'>
               {email}
             </Text>
           </Flex>
@@ -78,11 +72,11 @@ function TablesTableRow(props) {
         borderBottomColor='#56577A'
         minW='150px'>
         <Flex direction='column'>
-          <Text fontSize='sm' color='#fff' fontWeight='normal'>
-            {domain}
+          <Text fontSize='20px' color='#fff' fontWeight='normal'>
+            TOTAL:{domain}
           </Text>
-          <Text fontSize='sm' color='gray.400' fontWeight='normal'>
-            {subdomain}
+          <Text fontSize='25px' color='gray.400' fontWeight='normal'>
+            Periodo:{subdomain}
           </Text>
         </Flex>
       </Td>
@@ -99,7 +93,7 @@ function TablesTableRow(props) {
         </Badge>
       </Td>
       <Td border={lastItem ? "none" : null} borderBottomColor='#56577A'>
-        <Text fontSize='sm' color='#fff' fontWeight='normal'>
+        <Text fontSize='20px' color='#fff' fontWeight='normal'>
           {date}
         </Text>
       </Td>
@@ -110,7 +104,7 @@ function TablesTableRow(props) {
             color='gray.400'
             fontWeight='bold'
             cursor='pointer'>
-            Edit
+            Info
           </Text>
         </Button>
       </Td>

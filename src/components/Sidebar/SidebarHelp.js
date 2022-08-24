@@ -1,24 +1,8 @@
-/*!
 
-=========================================================
-* Vision UI Free Chakra - v1.0.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/vision-ui-free-chakra
-* Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-* Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-chakra/blob/master LICENSE.md)
-
-* Design and Coded by Simmmple & Creative Tim
-
-=========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-*/
-
-import { QuestionIcon } from "@chakra-ui/icons";
+import { StarIcon } from "@chakra-ui/icons";
 import { Button, Flex, Link, Text } from "@chakra-ui/react";
 import SidebarHelpImage from "assets/img/SidebarHelpImage.png";
+import signInImage from "assets/img/seg-login.png";
 import IconBox from "components/Icons/IconBox";
 import React from "react";
 
@@ -38,17 +22,17 @@ export function SidebarHelp(props) {
       minH='170px'
       minW='218px'>
       <IconBox width='35px' h='35px' bg='white' mb='auto'>
-        <QuestionIcon color='brand.200' h='18px' w='18px' />
+        <StarIcon color='brand.200' h='18px' w='18px' />
       </IconBox>
       <Text fontSize='sm' color='white' fontWeight='bold'>
-        Need help?
+        Tem alguam sugestão?
       </Text>
       <Text fontSize='xs' color='white' mb='10px'>
-        Please check our docs
+        click abaixo 
       </Text>
       <Link
         w='100%'
-        href='https://demos.creative-tim.com/docs-vision-ui-dashboard-chakra/'>
+        href='wa.link/1ndfy7'>
         <Button
           fontSize='10px'
           fontWeight='bold'
@@ -60,12 +44,12 @@ export function SidebarHelp(props) {
             transform: "none",
             borderColor: "transparent",
           }}
-          _active='none'
+          // _active='none'
           _focus={{
             boxShadow: "none",
           }}
           color='white'>
-          DOCUMENTATION
+          Inovações
         </Button>
       </Link>
     </Flex>

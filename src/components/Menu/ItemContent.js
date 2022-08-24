@@ -34,8 +34,8 @@ export function ItemContent(props) {
         me='16px'
       />
       <Flex flexDirection='column'>
-        <Text fontSize='14px' mb='5px' color={notificationColor}>
-          <Text fontWeight='bold' fontSize='14px' as='span'>
+        <Text fontSize='20px' mb='5px' color={notificationColor}>
+          <Text fontWeight='bold' fontSize='px' as='span'>
             {props.boldInfo}
             {spacing}
           </Text>
@@ -43,7 +43,7 @@ export function ItemContent(props) {
         </Text>
         <Flex alignItems='center'>
           <ClockIcon color={navbarIcon} w='13px' h='13px' me='3px' />
-          <Text fontSize='xs' lineHeight='100%' color={navbarIcon}>
+          <Text fontSize='20px' lineHeight='100%' color={navbarIcon}>
             {props.time}
           </Text>
         </Flex>

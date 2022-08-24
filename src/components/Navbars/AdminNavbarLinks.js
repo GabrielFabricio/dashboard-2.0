@@ -151,11 +151,11 @@ export default function HeaderLinks(props) {
               }}
               mb='10px'>
               <ItemContent
-                time='13 minutes ago'
-                info='from Alicia'
-                boldInfo='New Message'
-                aName='Alicia'
-                aSrc={avatar1}
+                time='40m "almoço"'
+                info='de S-26'
+                boldInfo='justivficativa'
+                
+                
               />
             </MenuItem>
             <MenuItem
@@ -171,14 +171,13 @@ export default function HeaderLinks(props) {
               }}
               mb='10px'>
               <ItemContent
-                time='2 days ago'
-                info='by Josh Henry'
-                boldInfo='New Album'
-                aName='Josh Henry'
-                aSrc={avatar2}
+                time='15m "setup"'
+                info='de S-01'
+                boldInfo='justivficativa'
               />
             </MenuItem>
             <MenuItem
+            
               borderRadius='8px'
               _hover={{
                 bg: "transparent",
@@ -190,11 +189,10 @@ export default function HeaderLinks(props) {
                 bg: "transparent",
               }}>
               <ItemContent
-                time='3 days ago'
-                info='Payment succesfully completed!'
-                boldInfo=''
-                aName='Kara'
-                aSrc={avatar3}
+              fontSize='10px'
+               time='(OEE) abaixo do esperado'
+               info='de S-28'
+               boldInfo='aviso'
               />
             </MenuItem>
           </Flex>
